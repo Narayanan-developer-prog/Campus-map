@@ -1,0 +1,18 @@
+body { margin: 0; font-family: sans-serif; background: #121212; color: #eee; }
+h1 { text-align: center; margin: 10px; }
+#map { height: 85vh; width: 100%; }
+#toggle {
+  position: absolute; z-index: 5; top: 60px; right: 12px;
+  padding: 8px 12px; background: #222; color: #eee;
+  border: 1px solid #555; border-radius: 6px; cursor: pointer;
+}
+
+/* dark map (key venaam) */
+#map.dark .maplibregl-canvas {
+  filter: invert(1) hue-rotate(180deg) brightness(0.9) contrast(0.9);
+}
+
+/* popup dark */
+.maplibregl-popup-content { background: #222; color: #eee; }
+.maplibregl-popup-anchor-bottom .maplibregl-popup-tip { border-top-color: #222; }
+.maplibregl-popup-close-button { color: #eee; }
